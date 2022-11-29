@@ -1,0 +1,27 @@
+@import "./color.scss";
+
+.container {
+  color: $primary-white;
+  display: grid;
+  width: 100vw;
+  background-color: $primary-pink;
+  grid-template-columns: 50% 50%;
+  height: 50px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+
+  @media (min-width: 600px) {
+    bottom: 100vh;
+  }
+
+  .homeContainer {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .favContainer {
+    text-align: center;
+    padding: 15px;
+  }
+}

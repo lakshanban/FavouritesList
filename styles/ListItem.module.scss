@@ -1,0 +1,88 @@
+@import "./color.scss";
+
+.container {
+  margin-bottom: 20px;
+  @media (min-width: 600px) {
+    width: 60vw;
+  }
+  margin-top: 10px;
+  .userContainer {
+    display: flex;
+    top: 10px;
+    margin-left: 20px;
+
+    .imageContainer {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+    }
+    .nameContainer {
+      padding-left: 10px;
+      p {
+        font-weight: 600;
+        color: $primary-blue;
+      }
+    }
+  }
+  .productContainer {
+    text-align: start;
+    margin-top: 10px;
+    .productImageContainer {
+      background-color: red;
+      position: relative;
+      img {
+        height: 300px;
+        width: 100%;
+
+        @media (min-width: 600px) {
+          height: 450px;
+          width: 100%;
+        }
+      }
+      .contentOnImage {
+        width: 90%;
+        position: absolute;
+        top: 70%;
+        left: 15px;
+        color: $primary-white;
+        display: flex;
+        justify-content: space-between;
+
+        .buttonOnImage {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .descriptionContainer {
+    text-align: start;
+    margin-top: 10px;
+    padding-left: 15px;
+    .likesContainer {
+      color: $primary-blue;
+      font-weight: 500;
+    }
+
+    .textDescContainer {
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    .tagsContainer {
+      font-weight: 300;
+      color: $primary-blue;
+    }
+
+    .commentsContainer {
+      color: $primary-gray;
+      margin-top: 10px;
+    }
+
+    hr {
+      color: $lite-gray;
+    }
+  }
+}
